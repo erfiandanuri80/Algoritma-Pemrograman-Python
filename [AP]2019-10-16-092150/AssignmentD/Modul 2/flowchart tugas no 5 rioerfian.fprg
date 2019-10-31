@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Win_10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-08 03:21:07 AM"/>
+        <attribute name="created" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA4OjA1OjE4IFBNOzI5MDg="/>
+        <attribute name="edited" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA4OjA1OjIyIFBNOzE7V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA1OjMyOjA5IFBNO0Zsb3djaGFydCB0dWdhcyBEIG5vIDUuZnByZzs4NDY3"/>
+        <attribute name="edited" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA4OjQzOjI3IFBNOzM7MzAyMA=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtN0lLQU5JSTsyMDE4LTEwLTA4OzAzOjIxOjA3IEFNOzM7MzA3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jarijari, panjang, lebar, alas, tinggi, menu" type="Integer" array="False" size=""/>
+            <declare name="luas" type="Real" array="False" size=""/>
+            <declare name="cek" type="String" array="False" size=""/>
+            <output expression="&quot;1. luas lingkaran  2. luas persegi panjang  3. luas segitiga  4. akhiri program&quot;" newline="True"/>
+            <output expression="&quot;Masukkan menu: (1/2/3/4)&quot;" newline="True"/>
+            <input variable="menu"/>
+            <if expression="menu==1">
+                <then>
+                    <output expression="&quot;luas lingkaran&quot;" newline="True"/>
+                    <output expression="&quot;Masukkan jarijari : &quot;" newline="True"/>
+                    <input variable="jarijari"/>
+                    <assign variable="luas" expression="3.14*jarijari*jarijari"/>
+                    <output expression="luas" newline="True"/>
+                </then>
+                <else>
+                    <if expression="menu==2">
+                        <then>
+                            <output expression="&quot;luas persegi panjang&quot;" newline="True"/>
+                            <output expression="&quot;Masukkan panjang: &quot;" newline="True"/>
+                            <input variable="panjang"/>
+                            <output expression="&quot;Masukkan lebar: &quot;" newline="True"/>
+                            <input variable="lebar"/>
+                            <assign variable="luas" expression="panjang*lebar"/>
+                            <output expression="luas" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="menu==3">
+                                <then>
+                                    <output expression="&quot;luas segitiga&quot;" newline="True"/>
+                                    <output expression="&quot;Masukkan alas: &quot;" newline="True"/>
+                                    <input variable="alas"/>
+                                    <output expression="&quot;Masukkan tinggi: &quot;" newline="True"/>
+                                    <input variable="tinggi"/>
+                                    <assign variable="luas" expression="0.5*alas*tinggi"/>
+                                    <output expression="luas" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Program berakhir.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;anda dialihkan ke menu? (Y/T)&quot;" newline="True"/>
+            <input variable="cek"/>
+            <if expression="cek=&quot;Y&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;Program berakhir &amp; Terima kasih.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

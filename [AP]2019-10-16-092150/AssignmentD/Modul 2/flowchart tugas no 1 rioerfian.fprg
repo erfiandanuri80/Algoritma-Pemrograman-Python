@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Win_10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-08 03:16:37 AM"/>
+        <attribute name="created" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA0OjIyOjE5IFBNOzI5MDQ="/>
+        <attribute name="edited" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA0OjU4OjMyIFBNOzE7MzAxNg=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtN0lLQU5JSTsyMDE4LTEwLTA4OzAzOjE2OjM3IEFNOzE7MzA3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sukuawal, beda, jumlah, x, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="x" expression="0"/>
+            <output expression="&quot;deret aritmatika&quot;" newline="True"/>
+            <output expression="&quot;Masukkan sukuawal: &quot;" newline="True"/>
+            <input variable="sukuawal"/>
+            <output expression="&quot;Masukkan beda: &quot;" newline="True"/>
+            <input variable="beda"/>
+            <output expression="&quot;Masukkan jumlah: &quot;" newline="True"/>
+            <input variable="jumlah"/>
+            <while expression="x&lt;jumlah">
+                <assign variable="x" expression="x+sukuawal"/>
+                <if expression="x&lt;=jumlah">
+                    <then>
+                        <output expression="&quot;Suku ke-&quot;&amp; i &amp;&quot;=&quot;&amp; sukuawal &amp;&quot; &quot; &amp; &quot; Total :&quot;&amp; x" newline="True"/>
+                        <assign variable="i" expression="i+1"/>
+                        <assign variable="sukuawal" expression="sukuawal+beda"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

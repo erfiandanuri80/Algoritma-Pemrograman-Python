@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Win_10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-08 05:11:01 AM"/>
+        <attribute name="created" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA1OjA4OjU1IFBNOzI5MDk="/>
+        <attribute name="edited" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA1OjA4OjU4IFBNOzE7QVNVUztERVNLVE9QLTI3VTZMQTc7MjAxOC0wOS0xOTswMzowNjoyMyBQTTtUdWdhcy5mcHJnOzY3NTg="/>
+        <attribute name="edited" value="V2luXzEwO1BSSVlBQkFHVVNBTUFOVTsyMDE4LTEwLTA3OzA4OjAxOjU1IFBNOzU7MzAxNw=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtN0lLQU5JSTsyMDE4LTEwLTA4OzA1OjExOjAxIEFNOzE7MzA2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil, y, i" type="Integer" array="False" size=""/>
+            <assign variable="y" expression="0"/>
+            <output expression="&quot;tentukan bilangan&quot;" newline="True"/>
+            <input variable="bil"/>
+            <for variable="i" start="1" end="bil+1" direction="inc" step="1">
+                <if expression="bil mod i = 0">
+                    <then>
+                        <assign variable="y" expression="y+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="y==2">
+                <then>
+                    <output expression="bil &amp; &quot;adalah Bilangan Prima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="y&lt;2 or y&gt;2">
+                        <then>
+                            <output expression="bil &amp; &quot;adalah Bukan Bilangan Prima&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
